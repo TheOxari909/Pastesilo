@@ -1,0 +1,19 @@
+body {
+    color: white;
+    background-color: #333333;
+}
+#textbox {
+    width: 50rem; 
+    height: 25rem;
+    text-align: left;
+}
+
+#submitform {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+a { color: inherit; text-decoration: none; } 

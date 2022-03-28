@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    </head>
+<body>
+    <div id="submitform">
+    <b>Submit text</b>
+	<form id="form_submit" action="api/submit" method="post" enctype="text/plain" autocomplete="off">
+		<label>Insert paste: </label><br />
+		<input type="text" name="text" id="textbox" /><br />
+		<a href="#" onclick="submitForm()">Submit Here</a>
+	</form>
+    </div>
+	<script>
+		function submitForm() {
+			let form = document.getElementById("form_submit");
+			form.submit();
+		}
+	</script>
+</body>
+
+</html>
